@@ -33,6 +33,7 @@ body {
   background-color: rgba(0, 128, 255, 0.8);
   border-radius: 50%;
   border: 5px solid rgba(0, 0, 156, 0.8);
+  transition: all 0.5ms;
 }
 
 /*Titulo*/
