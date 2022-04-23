@@ -605,7 +605,7 @@ a {
   border-bottom: 10px groove purple;
   border-radius: 100%;
   position: absolute;
-  transform: translate(800px, 00px);
+  transform: translate(725px, 00px);
   background-image: url(../imagenes/diseno-grafico1.jpg);
   background-position: center;
   background-size: cover;
