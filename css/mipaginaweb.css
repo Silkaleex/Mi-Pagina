@@ -10,7 +10,7 @@
 body {
   padding: 15px;
   margin: 0px;
-  background: linear-gradient(to bottom right, (#333333, #121212));
+  background-color: linear-gradient(#333333, #121212), fixed;
   display: block;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -50,7 +50,7 @@ h1 {
   color: #0004ff;
   text-align: center;
   font-size: 40px;
-  background-image: url(/imagenes/arrugado.jpg);
+  background: linear-gradient(to bottom right, #ffdef2, #e6f0ff);
   background-position: center;
   background-size: cover;
   border: 1px solid #00ffdc;
