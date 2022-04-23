@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>🖥 Mi pagina web 🖥</title>
+  </head>
+  <style>
+    body {
+      padding: 10px;
+      background-color: #33caff;
+      color: #002073;
+      font-family: "Rampart One", cursive;
+    }
+    h1 {
+      margin: 0 auto;
+      margin-top: 300px;
+      width: 50%;
+    }
+  </style>
+  <body>
+    <h1>Probando cosas en esta pagina web de FrontEnd</h1>
+    <script>
+      "use strict";
+      console.log(" \n\ Pruebas \n\ ");
+      const a = 15;
+      const b = 10;
+
+      console.log(a * b);
+      //
+      const biografia = {
+        name: "Alejandro",
+        age: 1995,
+        location: "spain",
+        from: "salamanca",
+        pet: "Dog",
+        namePet: "Richi",
+        wasBorn: 2009,
+        favouriteColor: "Blue",
+
+        miEdad: function () {
+          this.year = 2021 - this.age;
+          return this.year;
+        },
+        edadDeRichi: function () {
+          this.edad = 2021 - this.wasBorn;
+          return this.edad;
+        },
+        listado: function () {
+          return `Mi nombre es ${this.name} naci en ${this.from} y tengo un perro que se llama ${this.namePet} que nacio en ${this.wasBorn}`;
+        },
+      };
+      console.log(biografia.miEdad());
+      console.log(biografia.edadDeRichi());
+      document.write(`<br>` + "<b>" + `<i>` + biografia.listado());
+
+      //
+      let i = 0;
+
+      do {
+        i++;
+        console.log(i);
+      } while (i < 5);
+
+      for (i = 0; i < 5; i++) {
+        console.log(`Revisando su sistema${i}`);
+      }
+
+      console.log(i);
+
+      while (i < 10) {
+        console.log(`Sistema revisado correctamente, finalizando en ${i} s`);
+        i++;
+      }
+      console.log(`sistema finalizado con exito!`);
+    </script>
+  </body>
+</html>

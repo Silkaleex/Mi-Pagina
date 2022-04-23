@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+      * {
+        font-family: "Zen Antique", serif;
+        color: #e30000;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        padding: 10px;
+        margin: 0px auto;
+        background: linear-gradient(10deg, yellow, orange);
+        background-size: cover;
+      }
+
+      #informacion {
+        background-color: hsl(60, 80%, 60%);
+        border: 5px groove #df0000;
+        color: #df0000;
+        margin: 0 auto;
+        font-size: 30px;
+        text-align: center;
+        width: 50%;
+        border-radius: 50px;
+      }
+
+      .estilos1 {
+        float: left;
+        width: 28%;
+        height: 100%;
+        padding: 10px;
+        background-color: hsl(60, 80%, 60%);
+        border: 5px groove #df0000;
+        border-radius: 30px;
+        text-align: center;
+      }
+      .estilos2 {
+        float: right;
+        width: 35%;
+        height: 100%;
+        padding: 10px;
+        margin-left: 15px;
+        background-color: hsl(60, 80%, 60%);
+        border: 5px groove #df0000;
+        border-radius: 29px;
+        text-align: center;
+      }
+      .estilos3 {
+        width: 28%;
+        float: right;
+        height: 100%;
+        padding: 10px;
+        background-color: hsl(60, 80%, 60%);
+        border: 5px groove #df0000;
+        border-radius: 30px;
+        text-align: center;
+      }
+      div {
+        margin-top: 500px;
+        width: 50%;
+        transition: all 1s;
+      }
+      div:hover {
+        transform: translateY(10px);
+        transition: all 1s;
+      }
+      #extra {
+        background: repeating-linear-gradient(
+          to top right,
+          yellow,
+          orange 20px
+        );
+        color: #630000;
+        padding: 20px;
+        border-radius: 40px;
+        border: 2px groove #fe5b5b;
+        transition: all 1s;
+        text-decoration: none;
+      }
+      #extra:hover {
+        background: repeating-linear-gradient(to top left, orange, yellow 20px);
+        color: #e60000;
+        padding: 20px;
+        border-radius: 40px;
+        border: 2px groove #df0000;
+        transition: all 1s;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="informacion">Información General de Desarrollo Web</section>
+    <br />
+    <section class="estilos1">
+      <h1>¿Que es FrontEnd y BackEnd?</h1>
+      <p>
+        Frontend es la parte de un sitio web que interactúa con los usuarios,
+        por eso decimos que está del lado del cliente. Backend es la parte que
+        se conecta con la base de datos y el servidor que utiliza dicho sitio
+        web, por eso decimos que el backend corre del lado del servidor. Estos
+        dos conceptos explican a grandes rasgos cómo funciona una página web y
+        son fundamentales para cualquier persona que trabaje en el mundo
+        digital, ya sea en programación, marketing, diseño o emprendimiento.<br />
+      </p>
+    </section>
+    <section class="estilos2">
+      <h2>¿Que es JavaScript?</h2>
+      <p>
+        JavaScript es un lenguaje de programación o de secuencias de comandos
+        que te permite implementar funciones complejas en páginas web, cada vez
+        que una página web hace algo más que sentarse allí y mostrar información
+        estática para que la veas, muestra oportunas actualizaciones de
+        contenido, mapas interactivos, animación de Gráficos 2D/3D,
+        desplazamiento de máquinas reproductoras de vídeo, etc., puedes apostar
+        que probablemente JavaScript está involucrado. Es la tercera capa del
+        pastel de las tecnologías web estándar, dos de las cuales (HTML y CSS)
+        hemos cubierto con mucho más detalle en otras partes del Área de
+        aprendizaje.<br />
+      </p>
+    </section>
+    <section class="estilos3">
+      <h2>¿Que es Java?</h2>
+      <p>
+        Java es un lenguaje de programación y una plataforma informática
+        comercializada por primera vez en 1995 por Sun Microsystems. Hay muchas
+        aplicaciones y sitios web que no funcionarán a menos que tenga Java
+        instalado y cada día se crean más. Java es rápido, seguro y fiable.
+        Desde portátiles hasta centros de datos, desde consolas para juegos
+        hasta súper computadoras, desde teléfonos móviles hasta Internet, Java
+        está en todas partes.<br />
+        Tradicionalmente un software departamental o incluso un ambicioso
+        proyecto corporativo de gran envergadura es desarrollado en forma stand
+        alone, es decir, usando lenguajes ya sea compilados(C, C++, Delphi),
+        semicompilados(.NET, Mono, Java), o interpretados (Python, PHP) para
+        crear tanto la funcionalidad como toda la interfaz de los usuarios, pero
+        cabe perfectamente un desarrollo orientado a web para dichos propósitos,
+        siendo más homogéneo y multiplataforma, y dependiendo de las tecnologías
+        utilizadas, más rápido y robusto tanto para diseñar, implementar y
+        probar, como para su uso una vez terminado.
+      </p>
+    </section>
+
+    <div>
+      <br />
+      <a
+        id="extra"
+        href="https://app.ed.team/blog/cuales-son-las-areas-de-la-programacion"
+        target="_blanck"
+        >Mas Informacion Aqui!</a
+      >
+    </div>
+  </body>
+</html>
