@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kaushan Script", cursive;
+}
+
+html,
+body {
+  font-size: 18px;
+  background: linear-gradient(#ecb009, #e97304);
+  color: #f6dac3;
+}
+
+h1 {
+  max-width: 940px;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  margin: 40px 0;
+  padding: 15px;
+  color: black;
+  background-color: #e94382;
+  border: 2px solid #ffff;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 40px;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-principal {
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

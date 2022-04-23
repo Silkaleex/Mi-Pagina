@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:ital@1&family=Roboto:ital,wght@1,300&display=swap");
+/*Por si quiero algun dia cambiar algun texto o parrafo 
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
 * {
   margin: 0;
   padding: 0;
-  font-family: "Zen Antique", serif;
+  font-family: "Roboto", sans-serif;
   cursor: none;
 }
 
@@ -527,7 +530,6 @@ a:hover.juegos {
 h3 {
   color: white;
   background-color: rgba(0, 0, 0, 0.76);
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0 -40px;
   padding: 0px 0px;
   width: auto;
@@ -547,6 +549,7 @@ a {
   font-size: 50px;
   color: rgb(83, 83, 83);
   transition: all 1s;
+  animation-duration: 5s;
 }
 
 #seleccion:hover {
@@ -650,7 +653,6 @@ a {
   color: black;
   font-weight: bold;
   background-color: yellow;
-  font-family: "Source Code Pro", monospace;
 }
 
 .fecha {
@@ -670,7 +672,6 @@ a {
   margin: 1px;
   margin-right: 2px;
   background-color: yellow;
-  font-family: "Source Code Pro", monospace;
 }
 
 /*Boton de ir Arriba*/
@@ -723,7 +724,6 @@ a {
 
 /*Footer*/
 #fn {
-  background-color: white;
   height: auto;
   width: auto;
   padding: 10px 10px;
@@ -731,10 +731,7 @@ a {
   transform: translate(0px, 500px);
   display: block;
   z-index: auto;
-  border: 1px solid aqua;
-  background-image: url(/imagenes/arrugado.jpg);
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(to bottom right, #38fbef, #5baffc);
   font-size: 20px;
   font-weight: bold;
 }

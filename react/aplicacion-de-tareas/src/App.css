@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+}
+
+html,
+body {
+  color: white;
+  background-image: url(./imganes/nubes.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 40px;
+}
+
+h1 {
+  color: #1b1b32;
+  text-align: center;
+  margin: 20px 0px;
+  letter-spacing: 2px;
+}
+
+.aplicacion-tareas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-contenedor {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 200px;
+  height: 150px;
+  transform: translate(116px, 0px);
+}
+.nombre {
+  transform: translate(-104px, -113px);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 48%,
+    rgba(255, 98, 98, 1) 76%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  margin: 40px;
+}
+.nombre::selection {
+  background-color: gray;
+}
+/*Lista de tareas*/
+.tareas-lista-principal {
+  width: 600px;
+  min-height: 500px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+}
