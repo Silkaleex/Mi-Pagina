@@ -10,7 +10,8 @@
 body {
   padding: 15px;
   margin: 0px;
-  background-color: linear-gradient(#333333, #121212), fixed;
+  background: linear-gradient(#333333, #121212);
+  background-attachment: fixed;
   display: block;
   box-sizing: border-box;
   overflow-x: hidden;
