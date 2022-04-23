@@ -27,14 +27,16 @@ body {
 }
 
 .mouse-follower {
-  width: 25px;
-  height: 25px;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 128, 255, 0.8);
+  width: 0;
+  height: 0;
+  top: 0px;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #38fbef;
+  border-left: 50px solid #38fbef;
+  border-bottom: 50px solid #38fbef;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 5px solid rgba(0, 0, 156, 0.8);
-  transition: all 0.5ms;
 }
 
 /*Titulo*/
