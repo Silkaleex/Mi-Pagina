@@ -17,12 +17,12 @@ h1 {
   max-width: 940px;
   font-family: "Lobster", cursive;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 100;
   letter-spacing: 3px;
   line-height: 1.1;
   margin: 40px 0;
   padding: 15px;
-  color: black;
+  color: #ffff;
   background-color: #e94382;
   border: 2px solid #ffff;
   border-top-left-radius: 40px;
