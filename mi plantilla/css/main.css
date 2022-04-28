@@ -184,6 +184,23 @@ body {
   border-radius: 20px;
 }
 
+#lis8 {
+  font-size: 15px;
+  width: 300px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.corregir {
+  text-decoration: none;
+  color: black;
+}
+.corregir:hover {
+  text-decoration: none;
+  color: #1700ff;
+}
 #sm {
   display: flex;
   padding: 10px;
