@@ -9,7 +9,11 @@
 html,
 body {
   color: white;
-  background-image: url(./imganes/nubes.jpg);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -65,5 +69,6 @@ h1 {
   background-color: #d0d0d5;
   padding: 25px;
   margin: 10px;
-  border-radius: 26px;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
 }
