@@ -451,8 +451,8 @@ body {
   }
   /*parte uno*/
   .cuadro {
-    margin-top: 0px;
-    margin-left: -72px;
+    margin-top: 7px;
+    margin-left: -100px;
     text-align: center;
     width: 440px;
   }
@@ -468,7 +468,7 @@ body {
     height: 60px;
     filter: brightness(100%);
     border-radius: 50%;
-    margin-left: 44%;
+    margin-left: 40%;
   }
   .enlace {
     text-align: center;
@@ -530,12 +530,13 @@ body {
 
   #lis3 {
     font-size: 10px;
-    width: 98%;
+    width: 119%;
+    letter-spacing: 1px;
   }
   /*parte tres*/
   .three {
     margin: 0px auto;
-    height: 163%;
+    height: 100%;
     width: 100%;
     grid-column: 2 / 5;
     grid-row: 4 / 6;
@@ -543,13 +544,30 @@ body {
     background-size: cover;
     margin-left: 0%;
   }
+  .corregir {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  
+  #lis5 {
+    font-size: 12px;
+  }
+}
+#lis6 {
+  font-size: 12px;
+}
+
+#lis7 {
+  font-size: 12px;
+}
   /*parte cuatro*/
   .four {
     grid-column: 1/ 1;
     grid-row: 4 / 6;
     background-image: url(../img/pared.jpg);
     background-size: cover;
-    height: 163%;
+    height: 100%;
   }
   #tl {
     font-size: 25px;
