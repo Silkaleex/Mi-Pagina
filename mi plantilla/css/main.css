@@ -10,6 +10,8 @@
 }
 body {
   cursor: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .mouse-follower,
 .mouse-follower-sibling {
@@ -49,8 +51,8 @@ body {
   grid-row: 1 / 3;
   background: linear-gradient(to bottom right, #87cf8e, #b8cf87);
   background-size: cover;
-  height: auto;
-  margin-bottom: -205px;
+  height: 407px;
+  margin-bottom: 0;
 }
 .three {
   grid-column: 2 / 5;
@@ -139,7 +141,7 @@ body {
 
 .three {
   margin: 0px auto;
-  height: auto;
+  height: 165%;
 }
 .three li {
   line-height: 35px;
@@ -173,6 +175,7 @@ body {
   padding: 5px;
   text-align: center;
   border-radius: 20px;
+  transform: translate(10px, 10px);
 }
 
 #lis7 {
@@ -182,6 +185,7 @@ body {
   padding: 5px;
   text-align: center;
   border-radius: 20px;
+  transform: translate(10px, 10px);
 }
 
 #lis8 {
@@ -191,6 +195,7 @@ body {
   padding: 5px;
   text-align: center;
   border-radius: 20px;
+  transform: translate(10px, 10px);
 }
 
 .corregir {
@@ -275,6 +280,10 @@ body {
 }
 
 @media (max-width: 900px) {
+  body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
   /*parte uno*/
   .contenedor {
     display: grid;
@@ -396,7 +405,6 @@ body {
     padding: 5px;
     text-align: center;
     border-radius: 20px;
-    transform: translate(-102px, -95px);
   }
 }
 #lis6 {
@@ -406,7 +414,6 @@ body {
   padding: 5px;
   text-align: center;
   border-radius: 20px;
-  transform: translate(-94px, -92px);
 }
 
 #lis7 {
@@ -416,7 +423,6 @@ body {
   padding: 5px;
   text-align: center;
   border-radius: 20px;
-  transform: translate(-85px, -92px);
 }
 
 #lis8 {
@@ -426,7 +432,6 @@ body {
   padding: 5px;
   text-align: center;
   border-radius: 20px;
-  transform: translate(-85px, -92px);
 }
 
 /*parte cuatro*/
@@ -448,6 +453,8 @@ body {
     font-family: "Inter", sans-serif;
     background-position: center;
     background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   /*parte uno*/
   .cuadro {
@@ -549,47 +556,62 @@ body {
     color: black;
     font-size: 12px;
   }
-  
+
   #lis5 {
     font-size: 12px;
+    width: 400px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
   }
 }
 #lis6 {
   font-size: 12px;
+  width: 400px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
 }
 
 #lis7 {
   font-size: 12px;
+  width: 300px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
 }
-  /*parte cuatro*/
-  .four {
-    grid-column: 1/ 1;
-    grid-row: 4 / 6;
-    background-image: url(../img/pared.jpg);
-    background-size: cover;
-    height: 100%;
-  }
-  #tl {
-    font-size: 25px;
-    margin-left: 40px;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.685);
-    border: 1px solid white;
-    border-radius: 10px;
-    color: white;
-    transition: 1s all;
-  }
-  #four-txt {
-    list-style: none;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.685);
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 0px 0px 0px 70px;
-    font-size: 20px;
-    color: white;
-    transition: 1s all;
-  }
+/*parte cuatro*/
+
+.four {
+  grid-column: 1/ 1;
+  grid-row: 4 / 6;
+  background-image: url(../img/pared.jpg);
+  background-size: cover;
+  height: 100%;
+}
+#tl {
+  font-size: 25px;
+  margin-left: 117px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.685);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  transition: 1s all;
+}
+#four-txt {
+  list-style: none;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.685);
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0px 0px 0px 130px;
+  font-size: 25px;
+  color: white;
+  transition: 1s all;
 }
 
 @media (max-width: 375px) {
