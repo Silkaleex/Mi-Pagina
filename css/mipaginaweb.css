@@ -62,15 +62,76 @@ h1 {
   width: auto;
   height: auto;
   padding: 15px 50px;
-  color: #0004ff;
+  color: #68829e;
   text-align: center;
   font-size: 40px;
   background: linear-gradient(to bottom right, #ffdef2, #e6f0ff);
   background-position: center;
   background-size: cover;
   border: 1px solid #00ffdc;
+  letter-spacing: -0.01em;
 }
-
+#texto {
+  color: #68829e;
+  display: block;
+  font-size: 40px;
+  line-height: 1.1;
+  position: relative;
+}
+#texto::before {
+  animation-name: var(--animation, a);
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(
+    to bottom right,
+    var(--start-color),
+    var(--end-color)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #68829e;
+  font-size: 40px;
+  position: absolute;
+  inset: 0;
+  content: var(--content);
+  opacity: 1;
+}
+@keyframes a {
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+}
+@keyframes a2 {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+  16.667%,
+  66.667% {
+    opacity: 0;
+  }
+}
+@keyframes a3 {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+}
 /*Siguiente Seccion*/
 #misdibujos {
   text-align: center;

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Muñequito</title>
+    <style>
+      html {
+        margin: 0px auto;
+        padding: 50px;
+        background: linear-gradient(purple, blue, black);
+        width: 200%;
+        height: 200%;
+      }
+      body {
+        margin: 0px auto;
+        padding: 10px;
+        /*overflow-x: hidden;*/
+      }
+      #cubo {
+        width: 200px;
+        height: 200px;
+        margin: 0px auto;
+        margin-top: 100px;
+      }
+
+      #cuadro1 {
+        width: 200px;
+        height: 200px;
+        background-color: #54fff2;
+        position: relative;
+        transform: translate(0px, 25px);
+        border: 5px groove blue;
+      }
+      #cuadro2 {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        border: 1px solid black;
+        transform: translate(23px, -162px);
+        position: relative;
+      }
+
+      #cuadro3 {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        border: 1px solid black;
+        transform: translate(132px, -214px);
+        position: relative;
+      }
+
+      #cuadro4 {
+        width: 150px;
+        height: 25px;
+        background-color: blue;
+        transform: translate(28px, -150px);
+        position: relative;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+
+      #cuadro5 {
+        width: 25px;
+        height: 25px;
+        background-color: blue;
+        transform: translate(13px, -195px);
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+
+      #cuadro6 {
+        width: 25px;
+        height: 25px;
+        background-color: blue;
+        transform: translate(170px, -220px);
+        position: relative;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      #cuadro7 {
+        width: 25px;
+        height: 25px;
+        background-color: black;
+        transform: translate(145px, -335px);
+        border: 1px solid white;
+        position: relative;
+      }
+      #cuadro8 {
+        width: 25px;
+        height: 25px;
+        background-color: black;
+        transform: translate(36px, -362px);
+        border: 1px solid white;
+        position: relative;
+      }
+      #cuadro9 {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        transform: translate(37px, -388px);
+        border: 1px solid black;
+        position: relative;
+      }
+      #cuadro10 {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        transform: translate(146px, -400px);
+        border: 1px solid black;
+        position: relative;
+      }
+      #cuerno1 {
+        width: 10px;
+        height: 100px;
+        background-color: blue;
+        transform: translate(75px, -558px);
+        position: relative;
+        border: 5px solid black;
+      }
+      #cuerno2 {
+        width: 10px;
+        height: 40px;
+        background-color: blue;
+        transform: translate(115px, -618px);
+        position: relative;
+        border: 5px solid black;
+      }
+      #cuerno3 {
+        width: 50px;
+        height: 10px;
+        background-color: blue;
+        transform: translate(35px, -737px);
+        position: relative;
+        border: 5px solid black;
+      }
+      #cuerno4 {
+        width: 10px;
+        height: 20px;
+        background-color: blue;
+        transform: translate(35px, -738px);
+        position: relative;
+        border: 5px solid black;
+      }
+      #cuerpo1 {
+        width: 321px;
+        height: 469px;
+        transform: translate(-62px, -451px);
+        position: relative;
+        background-color: black;
+        border: 5px solid blue;
+        border-radius: 25%;
+      }
+      #metal1 {
+        width: 80px;
+        height: 10px;
+        background-color: grey;
+        transform: rotate(50deg) translate(-38px, 14px);
+        border-radius: 20px;
+        border: 5px solid black;
+      }
+      #metal2 {
+        width: 80px;
+        height: 10px;
+        background-color: grey;
+        transform: rotate(66deg) translate(-54px, -14px);
+        border-radius: 20px;
+        border: 5px solid black;
+      }
+      #metal3 {
+        width: 80px;
+        height: 10px;
+        background-color: grey;
+        transform: rotate(-49deg) translate(224px, 159px);
+        border-radius: 20px;
+        border: 5px solid black;
+      }
+      #metal4 {
+        width: 80px;
+        height: 10px;
+        background-color: grey;
+        transform: rotate(-42deg) translate(248px, 160px);
+        border-radius: 20px;
+        border: 5px solid black;
+      }
+      #cuerpo2 {
+        width: 194px;
+        height: 40px;
+        transform: translate(2px, -901px);
+        position: relative;
+        background-color: steelblue;
+        border: 5px solid rgb(0, 89, 255);
+        border-radius: 30%;
+      }
+      #cuerpo3 {
+        width: 50px;
+        height: 50px;
+        transform: translate(70px, -954px);
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        border: 5px solid black;
+        border-radius: 40%;
+      }
+      #corbata1 {
+        width: 10px;
+        height: 40px;
+        transform: translate(72px, 47px);
+        z-index: 1;
+        position: absolute;
+        background-color: white;
+        border: 5px solid black;
+      }
+      #corbata2 {
+        width: 10px;
+        height: 26px;
+        transform: translate(26px, 50px);
+        z-index: 1;
+        position: absolute;
+        background-color: white;
+        border: 5px solid black;
+      }
+      #cuerpo4 {
+        width: 295px;
+        height: 40px;
+        transform: rotate(45deg) translate(-411px, -749px);
+        position: relative;
+        background-color: grey;
+        border: 2px solid black;
+        border-radius: 20px;
+      }
+      #manoi1 {
+        width: 80px;
+        height: 80px;
+        background-color: grey;
+        border: 1px solid black;
+        border-radius: 25px;
+        transform: translate(278px, -20px);
+      }
+      #dedoi1 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(358px, -90px);
+      }
+      #dedoi2 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(358px, -87px);
+      }
+      #dedoi3 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(358px, -84px);
+      }
+      #dedoi4 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(358px, -81px);
+      }
+      #dedoi5 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(289px, -70px);
+      }
+      #cuerpo5 {
+        width: 295px;
+        height: 40px;
+        transform: rotate(45deg) translate(-999px, -551px);
+        position: relative;
+        background-color: grey;
+        border: 2px solid black;
+        border-radius: 20px;
+      }
+      #manod1 {
+        height: 90px;
+        width: 90px;
+        background-color: grey;
+        border: 1px solid black;
+        border-radius: 25px;
+        transform: translate(-63px, -28px);
+      }
+      #dedod1 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(-123px, -99px);
+      }
+      #dedod2 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(-123px, -96px);
+      }
+      #dedod3 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(-123px, -93px);
+      }
+      #dedod4 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(-123px, -90px);
+      }
+      #dedod5 {
+        width: 60px;
+        height: 10px;
+        background-color: #54fff2;
+        border: 1px solid black;
+        border-radius: 10px;
+        transform: translate(-48px, -157px);
+      }
+      #cuerpo6 {
+        width: 40px;
+        height: 350px;
+        transform: translate(-4px, -590px);
+        position: relative;
+        background-color: #0064ff;
+        border: 5px solid blue;
+        border-radius: 20px;
+      }
+      #cuerpo7 {
+        width: 40px;
+        height: 350px;
+        transform: translate(157px, -951px);
+        position: relative;
+        background-color: #0064ff;
+        border: 5px solid blue;
+        border-radius: 20px;
+      }
+      #cuerpo8 {
+        width: 150px;
+        height: 40px;
+        transform: translate(-110px, -1000px);
+        position: relative;
+        background-color: #000275;
+        border: 5px solid blue;
+        border-radius: 20px;
+      }
+      #cuerpo9 {
+        width: 150px;
+        height: 40px;
+        transform: translate(58px, -1046px);
+        position: relative;
+        background-color: #000275;
+        border: 5px solid blue;
+        border-radius: 20px;
+      }
+      #nariz {
+        height: 30px;
+        width: 15px;
+        background-color: blue;
+        border: 2px solid black;
+        transform: translate(88px, 60px);
+      }
+      #peca {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        transform: translate(3px, 5px);
+      }
+      #bota1 {
+        height: 11px;
+        width: 24px;
+        background-color: silver;
+        transform: translate(27px, -16px);
+      }
+      #bota2 {
+        height: 11px;
+        width: 24px;
+        background-color: silver;
+        transform: translate(27px, -16px);
+      }
+      #pincho1 {
+        width: 6px;
+        height: 22px;
+        background-color: silver;
+        transform: rotate(25deg) translate(4px, -64px);
+      }
+      #pincho2 {
+        width: 5px;
+        height: 25px;
+        background-color: silver;
+        transform: rotate(-29deg) translate(75px, -52px);
+        border-radius: 5px;
+      }
+      #relleno1 {
+        width: 13px;
+        height: 23px;
+        background-color: silver;
+        transform: translate(33px, -98px);
+        border-radius: 20px;
+      }
+      #pincho3 {
+        width: 6px;
+        height: 22px;
+        background-color: silver;
+        transform: rotate(25deg) translate(4px, -64px);
+      }
+      #pincho4 {
+        width: 5px;
+        height: 27px;
+        background-color: silver;
+        transform: rotate(-28deg) translate(75px, -54px);
+        border-radius: 5px;
+      }
+      #relleno2 {
+        width: 13px;
+        height: 23px;
+        background-color: silver;
+        transform: translate(33px, -103px);
+        border-radius: 20px;
+      }
+      #pincho5 {
+        width: 5px;
+        height: 22px;
+        background-color: silver;
+        transform: rotate(25deg) translate(6px, -142px);
+      }
+      #pincho6 {
+        width: 5px;
+        height: 25px;
+        background-color: silver;
+        transform: rotate(-29deg) translate(138px, -95px);
+        border-radius: 5px;
+      }
+      #relleno3 {
+        width: 13px;
+        height: 23px;
+        background-color: silver;
+        transform: translate(67px, -168px);
+        border-radius: 20px;
+      }
+      #bota3 {
+        height: 11px;
+        width: 24px;
+        background-color: silver;
+        transform: translate(61px, -26px);
+      }
+      #bota4 {
+        height: 11px;
+        width: 24px;
+        background-color: silver;
+        transform: translate(61px, -27px);
+      }
+      #relleno4 {
+        width: 13px;
+        height: 20px;
+        background-color: silver;
+        transform: translate(67px, -170px);
+        border-radius: 20px;
+      }
+      #pincho7 {
+        width: 5px;
+        height: 22px;
+        background-color: silver;
+        transform: rotate(25deg) translate(5px, -145px);
+      }
+      #pincho8 {
+        width: 5px;
+        height: 25px;
+        background-color: silver;
+        transform: rotate(-29deg) translate(140px, -98px);
+        border-radius: 5px;
+      }
+      #raya {
+        height: 471px;
+        width: 5px;
+        background-color: white;
+        transform: translate(154px, -82px);
+      }
+      #raya1 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -400px);
+      }
+      #raya2 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -380px);
+      }
+      #raya3 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -360px);
+      }
+      #raya4 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -340px);
+      }
+      #raya5 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -320px);
+      }
+      #raya6 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -300px);
+      }
+      #raya7 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -280px);
+      }
+      #raya8 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -260px);
+      }
+      #raya9 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -240px);
+      }
+      #raya10 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -220px);
+      }
+      #raya11 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -200px);
+      }
+      #raya12 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -180px);
+      }
+      #raya13 {
+        height: 5px;
+        width: 50px;
+        background-color: white;
+        transform: translate(131px, -160px);
+      }
+      #raya14 {
+        height: 5px;
+        width: 34px;
+        background-color: white;
+        transform: translate(40px, -495px);
+        border: 1px solid black;
+      }
+      #raya15 {
+        height: 5px;
+        width: 42px;
+        background-color: white;
+        transform: translate(36px, -482px);
+        border: 1px solid black;
+      }
+      #raya16 {
+        height: 40px;
+        width: 5px;
+        background-color: white;
+        transform: translate(40px, -503px);
+        border: 1px solid black;
+      }
+      #raya17 {
+        height: 40px;
+        width: 5px;
+        background-color: white;
+        transform: translate(69px, -545px);
+        border: 1px solid black;
+      }
+      #raya18 {
+        height: 40px;
+        width: 5px;
+        background-color: white;
+        transform: translate(41px, -525px);
+        border: 1px solid black;
+      }
+      #raya19 {
+        height: 5px;
+        width: 35px;
+        background-color: white;
+        transform: translate(41px, -526px);
+        border: 1px solid black;
+      }
+      #raya20 {
+        height: 5px;
+        width: 35px;
+        background-color: white;
+        transform: translate(41px, -500px);
+        border: 1px solid black;
+      }
+      #raya21 {
+        height: 35px;
+        width: 5px;
+        background-color: white;
+        transform: translate(41px, -501px);
+        border: 1px solid black;
+      }
+      #raya22 {
+        height: 5px;
+        width: 35px;
+        background-color: white;
+        transform: translate(41px, -525px);
+        border: 1px solid black;
+      }
+      #raya23 {
+        height: 5px;
+        width: 35px;
+        background-color: white;
+        transform: translate(41px, -512px);
+        border: 1px solid black;
+      }
+      #raya24 {
+        height: 5px;
+        width: 45px;
+        background-color: white;
+        transform: rotate(45deg) translate(-310px, -367px);
+        border: 1px solid black;
+      }
+      #raya25 {
+        height: 5px;
+        width: 45px;
+        background-color: white;
+        transform: rotate(-45deg) translate(370px, -316px);
+        border: 1px solid black;
+      }
+      #simbolo {
+        background-color: blue;
+        border: 1px groove aquamarine;
+        border-radius: 10px;
+        position: absolute;
+        width: 80px;
+        height: 280px;
+        transform: translate(24px, -730px);
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cubo">
+      <div id="cuadro1">
+        <div id="peca"></div>
+        <div id="nariz"></div>
+      </div>
+      <div id="cuadro2"></div>
+      <div id="cuadro3"></div>
+      <div id="cuadro4"></div>
+      <div id="cuadro5"></div>
+      <div id="cuadro6"></div>
+      <div id="cuadro7"></div>
+      <div id="cuadro8"></div>
+      <div id="cuadro9"></div>
+      <div id="cuadro10"></div>
+      <div id="cuerno1"></div>
+      <div id="cuerno2"></div>
+      <div id="cuerno3"></div>
+      <div id="cuerno4"></div>
+      <div id="cuerpo1">
+        <div id="metal1"></div>
+        <div id="metal2"></div>
+        <div id="metal3"></div>
+        <div id="metal4"></div>
+        <div id="raya"></div>
+        <div id="raya1"></div>
+        <div id="raya2"></div>
+        <div id="raya3"></div>
+        <div id="raya4"></div>
+        <div id="raya5"></div>
+        <div id="raya6"></div>
+        <div id="raya7"></div>
+        <div id="raya8"></div>
+        <div id="raya9"></div>
+        <div id="raya10"></div>
+        <div id="raya11"></div>
+        <div id="raya12"></div>
+        <div id="raya13"></div>
+        <div id="raya14"></div>
+        <div id="raya15"></div>
+        <div id="raya16"></div>
+        <div id="raya17"></div>
+        <div id="raya18"></div>
+        <div id="raya19"></div>
+        <div id="raya20"></div>
+        <div id="raya21"></div>
+        <div id="raya22"></div>
+        <div id="raya23"></div>
+        <div id="raya24"></div>
+        <div id="raya25"></div>
+        <div id="simbolo"></div>
+      </div>
+      <div id="cuerpo2">
+        <div id="circulo1"></div>
+        <div id="corbata1"></div>
+      </div>
+      <div id="cuerpo3">
+        <div id="corbata2"></div>
+        <div id="circulo2"></div>
+      </div>
+      <div id="cuerpo4">
+        <div id="manoi1"></div>
+        <div id="dedoi1"></div>
+        <div id="dedoi2"></div>
+        <div id="dedoi3"></div>
+        <div id="dedoi4"></div>
+        <div id="dedoi5"></div>
+      </div>
+      <div id="cuerpo5">
+        <div id="manod1"></div>
+        <div id="dedod1"></div>
+        <div id="dedod2"></div>
+        <div id="dedod3"></div>
+        <div id="dedod4"></div>
+        <div id="dedod5"></div>
+      </div>
+      <div id="cuerpo6"></div>
+      <div id="cuerpo7"></div>
+      <div id="cuerpo8">
+        <div id="bota1"></div>
+        <div id="bota3"></div>
+        <div id="pincho1"></div>
+        <div id="pincho2"></div>
+        <div id="relleno1"></div>
+        <div id="pincho5"></div>
+        <div id="pincho6"></div>
+        <div id="relleno3"></div>
+      </div>
+      <div id="cuerpo9">
+        <div id="bota2"></div>
+        <div id="bota4"></div>
+        <div id="pincho3"></div>
+        <div id="pincho4"></div>
+        <div id="relleno2"></div>
+        <div id="pincho7"></div>
+        <div id="pincho8"></div>
+        <div id="relleno4"></div>
+      </div>
+      <div id="cuerpo10"></div>
+      <div id="cuerpo11"></div>
+    </div>
+  </body>
+</html>

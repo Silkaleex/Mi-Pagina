@@ -112,7 +112,7 @@ body {
 }
 
 .two li {
-  line-height: 30px;
+  line-height: 27px;
   margin: 0px auto;
   margin-top: 25px;
   padding: 5px;
@@ -141,7 +141,7 @@ body {
 
 .three {
   margin: 0px auto;
-  height: 165%;
+  height: 176%;
 }
 .three li {
   line-height: 35px;
