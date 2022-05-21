@@ -107,36 +107,10 @@ h1 {
     opacity: 0;
   }
 }
-@keyframes a2 {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  33.333%,
-  50% {
-    opacity: 1;
-  }
-  16.667%,
-  66.667% {
-    opacity: 0;
-  }
-}
-@keyframes a3 {
-  0%,
-  50%,
-  100% {
-    opacity: 0;
-  }
-  66.667%,
-  83.333% {
-    opacity: 1;
-  }
-}
 /*Siguiente Seccion*/
 #misdibujos {
   text-align: center;
   margin: 0 auto;
-  margin-top: 100px;
   margin-bottom: 50px;
   transform: translateY(100px);
   width: 500px;
@@ -279,6 +253,52 @@ h1 {
   position: relative;
   z-index: 1;
   margin-bottom: 150px;
+}
+/*menu Dibujos*/
+#apodo {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+  margin: 0px 16px;
+}
+#apodo-sp {
+  color: #21b9d4;
+  display: block;
+  font-size: 80px;
+  position: relative;
+}
+#apodo-sp::before {
+  animation-name: var(--animation, a);
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(
+    to right bottom,
+    var(--start-color),
+    var(--end-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #21b9d4;
+  font-size: 80px;
+  position: absolute;
+  inset: 0;
+  content: var(--content);
+  opacity: 1;
+}
+@keyframes b {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+  16.667%,
+  66.667% {
+    opacity: 0;
+  }
 }
 
 #menu-dibujos {
