@@ -83,7 +83,7 @@ flecha.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 
-// //Sobre Mi Adorable Perruco
+//Sobre Mi Adorable Perruco
 // const myDog = {
 //   name: "Richi",
 //   pleasures: ["water", "eat", "sleeping", "play with the stick"],
@@ -99,7 +99,7 @@ flecha.addEventListener("click", function () {
 
 // console.log(myDog);
 //Arrays
-const eleccion = [" 1-Dibujo Manga ", " 2-Kakashi ", " 3-Dragones "];
+const eleccion = ["Dibujo Manga ", "Kakashi ", "Dragones "];
 
 document.querySelector("#comentario").addEventListener("click", function () {
   const elegir = String(document.querySelector("#comentar").value);
@@ -108,7 +108,6 @@ document.querySelector("#comentario").addEventListener("click", function () {
   );
   alert(`Excelente Elección! \n\ Gracias Por El Comentario 🙂`);
 });
-console.log(eleccion);
 
 // eventos
 const botones = document.querySelector(".boton");
