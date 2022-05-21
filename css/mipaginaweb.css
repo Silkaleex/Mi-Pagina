@@ -8,6 +8,7 @@ font-family: 'Roboto', sans-serif;*/
   padding: 0;
   font-family: "Roboto", sans-serif;
   cursor: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -71,14 +72,14 @@ h1 {
   border: 1px solid #00ffdc;
   letter-spacing: -0.01em;
 }
-#texto {
+.texto {
   color: #68829e;
   display: block;
   font-size: 40px;
   line-height: 1.1;
   position: relative;
 }
-#texto::before {
+.texto::before {
   animation-name: var(--animation, a);
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -553,7 +554,7 @@ h1 {
   transform: translate(10px, -590px);
 }
 
-h2 {
+#projects {
   color: rgb(255, 255, 255);
   font-size: 25px;
 }
@@ -598,7 +599,7 @@ a:hover.juegos {
   margin-right: -15px;
   padding: 35px;
   width: auto;
-  height: 720px;
+  height: 820px;
   background: url(../imagenes/fondo39.jpg);
   border-top: 1px solid red;
   border-bottom: 1px solid red;
@@ -608,7 +609,7 @@ a:hover.juegos {
   background-position: center;
 }
 
-h3 {
+#vd-lb {
   color: white;
   background-color: rgba(0, 0, 0, 0.76);
   margin: 0 -40px;
@@ -676,7 +677,7 @@ a {
   padding: 5px 20px 5px 20px;
   border-radius: 80px;
   transition: all 2s;
-  margin-left: 125px;
+  margin-left: 160px;
 }
 
 #plantilla:hover {
@@ -689,72 +690,6 @@ a {
 #mano {
   font-size: 60px;
 }
-
-/*Reloj*/
-
-#tiempo {
-  border-top: 10px groove red;
-  border-left: 10px groove yellow;
-  border-right: 10px groove yellow;
-  border-bottom: 10px groove purple;
-  border-radius: 100%;
-  position: absolute;
-  transform: translate(725px, 00px);
-  background-image: url(../imagenes/diseno-grafico1.jpg);
-  background-position: center;
-  background-size: cover;
-  width: 550px;
-  height: 500px;
-}
-
-#reloj,
-#hora,
-#fecha {
-  display: block;
-  margin-right: 170px;
-  margin-top: 200px;
-}
-
-.hora,
-#ampm {
-  color: black;
-  text-transform: lowercase;
-}
-
-.hora {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-left: -150px;
-  transform: translateY(40px);
-}
-
-.hora p {
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-  background-color: yellow;
-}
-
-.fecha {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 10px;
-  margin-bottom: 100px;
-}
-.fecha p {
-  transform: translateX(60px);
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  border-radius: 10px;
-  padding: 3px;
-  margin: 1px;
-  margin-right: 2px;
-  background-color: yellow;
-}
-
 /*Boton de ir Arriba*/
 #direccion {
   width: 50px;
@@ -802,14 +737,61 @@ a {
   font-size: 40px;
   padding: 0px 0px;
 }
+/*Información*/
+#info {
+  background: linear-gradient(to bottom right, #dddbed, #7928ca);
+  width: auto;
+  height: auto;
+  position: center;
+  margin: 0px -2%;
+  padding: 10% 15%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  align-content: space-between;
+}
+#contain {
+  padding: 0% 12%;
+}
+.lista {
+  font-size: 14px;
+  width: 50%;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  background: linear-gradient(#5700a3, #a270ff);
+  background-position: left 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: all 0.5s;
+}
+.lista:hover {
+  background-size: 50% 2px;
+  color: var(#5700a3);
+  background-color: #cccaff;
+  width: 50%;
+}
 
+#fotoA {
+  width: 450px;
+  height: 550px;
+}
+#c-1 {
+  line-height: 45px;
+  letter-spacing: 1px;
+  padding: 0px 10px;
+}
+#c-2 {
+  padding: 0px 10px;
+}
 /*Footer*/
 #fn {
   height: auto;
   width: auto;
-  padding: 10px 10px;
-  margin: 0px -15px;
-  transform: translate(0px, 500px);
+  position: center;
+  margin: 0px -2%;
+  padding: 1% 15%;
+  transform: translate(0px, 50px);
   display: block;
   z-index: auto;
   background: linear-gradient(to bottom right, #38fbef, #5baffc);

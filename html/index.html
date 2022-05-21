@@ -23,22 +23,22 @@
 
     <!--Seccion de titulo-->
     <section id="titulo">
-        <h1><span id="texto" style="--start-color:#a0fbf5;--end-color:#158bfa;--content:'Mi Pagina Web';--animation:a">Mi Pagina Web</span></h1>
+        <h1><span class="texto" style="--start-color:#a0fbf5;--end-color:#158bfa;--content:'Mi Pagina Web';--animation:a">Mi Pagina Web</span></h1>
     </section>
 
 
     <!--Experiencia Laboral-->
     <section id="experiencia-laboral">
-        <h3>Vida Laboral</h3>
+        <h3 id="vd-lb">Vida Laboral</h3>
         <br><br>
         <div id="cuadro"></div>
         <br>
         <div id="seleccion"><i class="fas fa-hand-point-down" id="mano"></i></div>
         <br>
-        <a id="plantilla" href="../mi plantilla/html/index.html">© Mi Pagina web</a>
+        <a id="plantilla" href="../mi plantilla/html/index.html">© Contacto</a>
         <div id="contenido">
         <p>
-            <h2><i class="fas fa-hand-point-down"></i> Mis Proyectos :</h2>
+            <h2 id="projects"><i class="fas fa-hand-point-down"></i> Mis Proyectos :</h2>
             <br><br>
             <a href="../js/adivinar/index.html" class="juegos"> © Adivina un Número  </a></li>
             <br><br>
@@ -49,14 +49,14 @@
             <a href="../js/proyecto css/index.html" class="juegos">© Gym</a>
             <br><br>
             <a href="../js/proyecto calculadora javascript/calculadora.html" class="juegos">© Calculadora</a>
-            
+            <br><br>
+            <a href="../js/Apartamentos Caranthir/index.html" class="juegos">© Hotel Carantir</a>
         </p>
     </div>
     </section>
 
     <!--Mis dibujos-->
     <section id="menu-dibujos">
-        <h2 id="apodo"><span id="apodo-sp"style="--start-color:#00FFEA;--end-color:#8800FF;--content:'Silkaleex';--animation:b">Silkaleex</span></h2>
         <h6 id="misdibujos">Mis Dibujos</h6>
         <div class="contenedor-principal">
             <button id="btn-izquierda"><span class="fas fa-angle-left"></span></button>
@@ -124,36 +124,36 @@
                     Gracias!</a></div>
                     </div>
             </section>
-
-            <section id="tiempo">
-                <div id="reloj">
-                    <div class="hora">
-                        <p id="horas"></p>
-                        <p>:</p>
-                        <p id="minutos"></p>
-                        <p>:</p>
-                        <p id="segundos"></p>
-                        <p id="ampm"></p>
-                    </div>
-                    <br><br>
-                    <div class="fecha">
-                        <p id="diaSe"></p>
-                        <p id="dia"></p>
-                        <p>de</p>
-                        <p id="mes"></p>
-                        <p>del</p>
-                        <p id="year"></p>
-                        <p id="cpy"><b>©</b></p>
-                    </div>
-                </div>
-            </section>
-                <br><br>
-            <section id="fn">
-                <p>Todos los Derechos reservados © | Pagina Creada Por Alejandro Pascual</p>
-            </section>
-            <div class="mouse-follower"></div></div>
-            <div class="mouse-follower-sibling"></div> 
-
+            <section id="info">
+                <div id="grid">
+                    <div id="c-1">
+                <h2 class="texto">Sobre Mi:</h2>
+                <h3 class="texto" style="font-size:18px;margin:10px;">Desarrollador Front-end Developer</h3>
+                <p>Con 2 años de experiencia en hacer proyectos de diseño en paginas web. Centrado en la mayor aclaracion de codigo posible, visual y con capacidad suficiente para cumplir las necesidades del cliente</p>
+                <br>
+                <h3 class="texto" style="font-size:18px;">Frameworks</h3>
+                <ul id="contain">
+                    
+                    <li class="lista">HTML5</li>
+                    <li class="lista">CSS3</li>
+                    <li class="lista">JAVASCRIPT</li>
+                    <li class="lista">REACT</li>
+                    <li class="lista">WORDPRESS</li>
+                    <li class="lista">POSICIONAMIENTO SEO</li>
+                </ul>
+            </div>
+        </div>
+        <div id="c-2">
+            <img src="../imagenes/Screenshot_20200830-161958.png" alt="Silkaleex" id="fotoA">
+            <h2 id="apodo"><span id="apodo-sp"style="--start-color:#00FFEA;--end-color:#8800FF;--content:'Silkaleex';--animation:b">Silkaleex</span></h2>
+        </div>
+    </section>
+    <footer id="fn">Todos los Derechos reservados © | Pagina Creada Por Alejandro Pascual</footer>
+    
+    
+    <div class="mouse-follower"></div></div>
+    <div class="mouse-follower-sibling"></div> 
+    
             <script src="../js/mipaginaweb.js"></script>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>

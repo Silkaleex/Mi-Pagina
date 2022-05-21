@@ -41,89 +41,6 @@ btnIzquierdo.addEventListener("click", function () {
   contenedor.scrollLeft -= contenedor.offsetWidth;
 });
 
-//Reloj digital
-(function actualizarDatos() {
-  //Obtener datos de tiempo y fecha
-  var fecha = new Date(),
-    ampm,
-    horas = fecha.getHours(),
-    minutos = fecha.getMinutes(),
-    segundos = fecha.getSeconds(),
-    diaSemana = fecha.getDay(), //comienza desde 0
-    dias = fecha.getDate(),
-    mes = fecha.getMonth(), //comienza desde 0
-    year = fecha.getFullYear();
-
-  //Obtenemos nuestros elementos HTML
-  var elementoHoras = document.getElementById("horas"),
-    elementoMinutos = document.getElementById("minutos"),
-    elementoSegundos = document.getElementById("segundos"),
-    elementoAmpm = document.getElementById("ampm"),
-    elementoDiaSemana = document.getElementById("diaSe"),
-    elementoDia = document.getElementById("dia"),
-    elementoMes = document.getElementById("mes"),
-    elementoYear = document.getElementById("year");
-
-  //Declarar Arreglo de dias y meses
-  var arraySemana = [
-      "Domingo",
-      "Lunes",
-      "Martes",
-      "Miercoles",
-      "Jueves",
-      "Viernes",
-      "Sabado",
-    ],
-    arrayMes = [
-      "Enero",
-      "Febrero",
-      "Marzo",
-      "Abril",
-      "Mayo",
-      "Junio",
-      "Julio",
-      "Agosto",
-      "Septiembre",
-      "Octubre",
-      "Noviembre",
-      "Diciembre",
-    ];
-
-  //Asignamos datos de fecha
-  elementoDiaSemana.textContent = arraySemana[diaSemana];
-  elementoDia.textContent = dias;
-  elementoMes.textContent = arrayMes[mes];
-  elementoYear.textContent = year;
-
-  //Transformar el reloj de 24 a 12 Horas
-  if (horas >= 12) {
-    horas = horas - 12;
-    ampm = "PM";
-  }
-
-  //Agregmos 0 a los minutos tambien a los segundos
-  if (minutos < 10) {
-    minutos = "0" + minutos;
-  }
-
-  if (segundos < 10) {
-    segundos = "0" + segundos;
-  }
-
-  //Agregar condicional para evitar la hora 00
-  if (horas == 0) {
-    horas = 12;
-  }
-
-  //Asignar elementos de tiempo
-  elementoHoras.textContent = horas;
-  elementoMinutos.textContent = minutos;
-  elementoSegundos.textContent = segundos;
-  elementoAmpm.textContent = ampm;
-
-  setInterval(actualizarDatos, 1000);
-})();
-
 //Evento con el titulo Mis Dibujos
 var boton = document.getElementById("misdibujos");
 boton.addEventListener("click", edicion);
@@ -225,20 +142,27 @@ aviso.addEventListener("click", () => {
   alert("Todos los derechos reservados © ");
 });
 
-const cursorRounded = document.querySelector('.rounded');
-const cursorPointed = document.querySelector('.pointed');
+const cursorRounded = document.querySelector(".rounded");
+const cursorPointed = document.querySelector(".pointed");
 
 (() => {
-  const mouseFollower          = document.querySelector('.mouse-follower');
-  const mouseFollowerSibling   = document.querySelector('.mouse-follower-sibling');
+  const mouseFollower = document.querySelector(".mouse-follower");
+  const mouseFollowerSibling = document.querySelector(
+    ".mouse-follower-sibling"
+  );
 
-   if( mouseFollower && mouseFollowerSibling ) {
-       window.addEventListener('mousemove', ( e ) => {
-          const mousePosition = {x: e.x, y: e.y };
-          const shapeTl = gsap.timeline();
+  if (mouseFollower && mouseFollowerSibling) {
+    window.addEventListener("mousemove", (e) => {
+      const mousePosition = { x: e.x, y: e.y };
+      const shapeTl = gsap.timeline();
 
-          shapeTl.to(mouseFollower, mousePosition, 0);
-          shapeTl.to(mouseFollowerSibling, 1,{x: e.x, y: e.y, ease: Power2.easeIn}, '-=1');
-      });
-   }
-})(); 
+      shapeTl.to(mouseFollower, mousePosition, 0);
+      shapeTl.to(
+        mouseFollowerSibling,
+        1,
+        { x: e.x, y: e.y, ease: Power2.easeIn },
+        "-=1"
+      );
+    });
+  }
+})();
