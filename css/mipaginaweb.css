@@ -55,11 +55,10 @@ body {
 
 #titulo {
   margin: 0 auto;
-  padding-top: 25px;
 }
 
 h1 {
-  margin: 0px -14px 150px -14px;
+  margin: 0px -14px 20px -14px;
   width: auto;
   height: auto;
   padding: 15px 50px;
@@ -108,17 +107,14 @@ h1 {
     opacity: 0;
   }
 }
-/*Siguiente Seccion*/
+/*Seccion dibujos*/
 #misdibujos {
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  transform: translateY(100px);
+  transform: translate(380px, 54px);
   width: 500px;
   border-radius: 100px;
 }
 
-/*Mis Dibujos*/
 #edicion {
   width: 300px;
   height: 300px;
@@ -593,10 +589,7 @@ a:hover.juegos {
 
 /*Experiencia Laboral*/
 #experiencia-laboral {
-  margin-top: 20px;
-  margin-bottom: 250px;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin: 30px -2px;
   padding: 35px;
   width: auto;
   height: 820px;
@@ -743,7 +736,7 @@ a {
   width: auto;
   height: auto;
   position: center;
-  margin: 0px -2%;
+  margin: 30px -2px;
   padding: 10% 15%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -791,7 +784,7 @@ a {
   position: center;
   margin: 0px -2%;
   padding: 1% 15%;
-  transform: translate(0px, 50px);
+  transform: translate(0px, 20px);
   display: block;
   z-index: auto;
   background: linear-gradient(to bottom right, #38fbef, #5baffc);
