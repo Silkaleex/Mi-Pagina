@@ -254,7 +254,7 @@ h1 {
   margin: 30px -15px;
   padding: 35px;
   width: auto;
-  height: 820px;
+  height: 920px;
   background: url(../imagenes/fondo39.jpg);
   border-top: 1px solid red;
   border-bottom: 1px solid red;
@@ -347,7 +347,7 @@ a {
   background-color: black;
   border: 2px solid grey;
   color: white;
-  padding: 5px 20px 5px 20px;
+  padding: 10px 20px;
   border-radius: 80px;
   transition: all 2s;
   margin-left: 160px;
@@ -387,12 +387,11 @@ a {
 
 /*Proyectos*/
 #contenido {
-  padding: 40px;
+  padding: 2% 4%;
   margin-right: 60px;
   margin-left: auto;
-  width: 278px;
+  width: 377px;
   height: auto;
-  border: 10px groove transparent;
   background-color: rgba(0, 0, 0, 0.747);
   border: 1px solid grey;
   border-radius: 40px;
@@ -402,6 +401,7 @@ a {
 #projects {
   color: rgb(255, 255, 255);
   font-size: 25px;
+  padding: 5px 25px;
 }
 
 .juegos {
