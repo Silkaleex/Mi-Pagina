@@ -98,16 +98,6 @@ flecha.addEventListener("click", function () {
 // };
 
 // console.log(myDog);
-//Arrays
-const eleccion = ["Dibujo Manga ", "Kakashi ", "Dragones "];
-
-document.querySelector("#comentario").addEventListener("click", function () {
-  const elegir = String(document.querySelector("#comentar").value);
-  prompt(
-    `¿Que dibujo te gusta mas de estos 3? : \n\ ${eleccion} \n\ 🌟🌟🌟🌟🌟`
-  );
-  alert(`Excelente Elección! \n\ Gracias Por El Comentario 🙂`);
-});
 
 // eventos
 const botones = document.querySelector(".boton");
