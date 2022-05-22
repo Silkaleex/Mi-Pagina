@@ -86,16 +86,16 @@ h1 {
   background: linear-gradient(to bottom right, #ffdef2, #e6f0ff);
   background-position: center;
   background-size: cover;
-  border: 1px solid #00ffdc;
   letter-spacing: -0.01em;
 }
 .texto {
-  color: #68829e;
+  color: #979dac;
   display: block;
   line-height: 1.1;
   position: relative;
   font-weight: bold;
   font-size: 40px;
+  font-family: system-ui;
 }
 .texto::before {
   animation-name: var(--animation, a);
@@ -109,8 +109,9 @@ h1 {
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  color: #68829e;
+  color: #979dac;
   font-size: 40px;
+  font-family: system-ui;
   position: absolute;
   inset: 0;
   content: var(--content);
@@ -130,7 +131,7 @@ h1 {
 }
 /*Información*/
 #info {
-  background: linear-gradient(to bottom right, #dddbed, #7928ca);
+  background: linear-gradient(to bottom right, #a8dadc, #457b9d);
   width: auto;
   height: auto;
   position: center;
@@ -183,7 +184,7 @@ h1 {
   margin: 0px 16px;
 }
 #apodo-sp {
-  color: #21b9d4;
+  color: #3524a8;
   display: block;
   font-size: 80px;
   position: relative;
@@ -222,7 +223,7 @@ h1 {
 }
 .texto1 {
   font-size: 40px;
-  color: #68829e;
+  color: #4a35d4;
   font-family: system-ui;
   font-weight: 900;
   display: block;
@@ -235,7 +236,7 @@ h1 {
   background: linear-gradient(90deg, var(--start-color), var(--end-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #68829e;
+  color: #4a35d4;
   font-size: 40px;
   position: absolute;
   inset: 0;
@@ -245,7 +246,7 @@ h1 {
 .texto2 {
   font-size: 22px;
   font-weight: 600;
-  color: #68829e;
+  color: #4a35d4;
 }
 
 /*Experiencia Laboral*/
@@ -271,6 +272,41 @@ h1 {
   width: auto;
   text-align: center;
   font-size: 35px;
+  font-family: system-ui;
+  position: relative;
+}
+
+#vd-lb::before {
+  animation-name: var(--animation, c);
+  font-weight: bold;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(
+    to bottom right,
+    var(--start-color),
+    var(--end-color)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #68829e;
+  font-size: 35px;
+  font-family: system-ui;
+  position: absolute;
+  inset: 0;
+  content: var(--content);
+  opacity: 1;
+}
+
+@keyframes c {
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
 }
 
 a {
@@ -315,6 +351,8 @@ a {
   border-radius: 80px;
   transition: all 2s;
   margin-left: 160px;
+  font-family: system-ui;
+  font-weight: 700;
 }
 
 #plantilla:hover {
@@ -322,6 +360,8 @@ a {
   color: black;
   padding: 5px 20px 5px 20px;
   transition: all 2s;
+  font-family: system-ui;
+  font-weight: 700;
 }
 
 #mano {
@@ -402,6 +442,37 @@ a:hover.juegos {
   transform: translate(380px, 54px);
   width: 500px;
   border-radius: 100px;
+  font-size: 40px;
+  font-family: system-ui;
+}
+
+#misdibujos::before {
+  animation-name: var(--animation, d);
+  font-weight: bold;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(90deg, var(--start-color), var(--end-color));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #68829e;
+  font-size: 40px;
+  font-family: system-ui;
+  position: absolute;
+  inset: 0;
+  content: var(--content);
+  opacity: 1;
+}
+
+@keyframes d {
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
 }
 
 #edicion {
@@ -644,6 +715,8 @@ a:hover.juegos {
   padding: 10px;
   font-size: 20px;
   transition: all 1s;
+  font-family: system-ui;
+  font-weight: 600;
 }
 
 #correo:hover {
@@ -653,12 +726,14 @@ a:hover.juegos {
   padding: 10px;
   font-size: 20px;
   font-size: bold;
+  font-weight: 600;
   transition: all 1s;
+  font-family: system-ui;
 }
 
 #enlazar {
   position: absolute;
-  transform: translate(580px, 200px);
+  transform: translate(630px, 200px);
   margin: 0 auto;
   padding: 25px;
   width: 600px;
