@@ -1,31 +1,4 @@
 "use strict";
-// //Al Entrar en la pagina
-// var nombre = prompt("Ingresa tu Nombre");
-
-// if (nombre) {
-//   alert(`Bienvenido " + nombre + " Gracias por Entrar en mi pagina web.`);
-// } else {
-//   alert(`Escribe tu Nombre Por Favor`);
-// }
-
-// console.log(nombre);
-
-//En consola se mostrara el dia actual
-const hoy = new Date(); // {}
-//console.log( hoy );
-let dia = hoy.getDay(); // 0:domingo, 1:Lunes.....
-
-let diasDeLaSemana = [
-  "Domingo",
-  "Lunes",
-  "Martes",
-  "Miercoles",
-  "Jueves",
-  "viernes",
-  "Sabado",
-];
-
-console.log(`Hoy estamos a: ` + hoy);
 
 //Flechas de la Imagen
 var contenedor = document.querySelector(".slider"),
@@ -82,22 +55,6 @@ flecha.addEventListener("click", function () {
 flecha.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
-
-//Sobre Mi Adorable Perruco
-// const myDog = {
-//   name: "Richi",
-//   pleasures: ["water", "eat", "sleeping", "play with the stick"],
-//   colour: "canela",
-//   "color Eyes": "brown",
-//   race: "cooker Spanish-English",
-//   legs: 4,
-//   contidion: "nervous",
-//   "preferred food": "Salchicha de Frankfurt",
-//   affectionate: "sometimes",
-//   Warrior: "always",
-// };
-
-// console.log(myDog);
 
 // eventos
 const botones = document.querySelector(".boton");

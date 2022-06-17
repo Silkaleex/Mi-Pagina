@@ -159,14 +159,21 @@ h1 {
 }
 .lista:hover {
   background-size: 50% 2px;
-  color: var(#5700a3);
+  color: var(#011627);
   background-color: #cccaff;
   width: 50%;
 }
-
-#fotoA {
-  width: 450px;
-  height: 550px;
+picture {
+  display: inline-block;
+  background: linear-gradient(#eaecc6, #2bc0e4);
+}
+/*  
+  background: linear-gradient(#43c6ac, #191654);
+background: linear-gradient(#ea52f8, #0066ff);*/
+picture #fotoA {
+  mix-blend-mode: multiply;
+  filter: saturate(100%);
+  max-width: 450px;
 }
 #c-1 {
   line-height: 45px;

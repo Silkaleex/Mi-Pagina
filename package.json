@@ -1,0 +1,24 @@
+{
+  "name": "mi-pagina-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silkaleex/Mi-Pagina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Silkaleex/Mi-Pagina/issues"
+  },
+  "homepage": "https://github.com/Silkaleex/Mi-Pagina#readme"
+}
